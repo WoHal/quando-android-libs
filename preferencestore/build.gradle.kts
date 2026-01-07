@@ -59,7 +59,7 @@ afterEvaluate {
         publishToMavenCentral(true)
         signAllPublications()
         coordinates(
-            "io.github.wang",
+            "io.github.wohal",
             "quando-preference",
             libVersion
         )
