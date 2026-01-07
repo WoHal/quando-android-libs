@@ -1,0 +1,11 @@
+[versions]
+coilCompose = "3.3.0"
+coilGifVersion = "2.7.0"
+
+[libraries]
+coil = { module = "io.coil-kt:coil", version.ref = "coilGifVersion" }
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coilCompose" }
+coil-network-ktor3 = { module = "io.coil-kt.coil3:coil-network-ktor3", version.ref = "coilCompose" }
+
+[bundles]
+coil = ["coil", "coil-compose", "coil-network-ktor3"]

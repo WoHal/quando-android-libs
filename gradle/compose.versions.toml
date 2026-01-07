@@ -1,0 +1,50 @@
+[versions]
+activity-compose = "1.12.2"
+appcompat = "1.7.1"
+coreKtx = "1.17.0"
+navigation3 = "1.0.0"
+
+[libraries]
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version = "2025.12.01" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-animation-graphics = { group = "androidx.compose.animation", name = "animation-graphics" }
+
+androidx-compose-material3-adaptive = { group = "androidx.compose.material3.adaptive", name = "adaptive-android", version = "1.2.0" }
+androidx-compose-material-iconsExtended = { group = "androidx.compose.material", name = "material-icons-extended", version = "1.7.8" }
+androidx-compose-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version = "1.1.1" }
+
+
+androidx-tv-foundation = "androidx.tv:tv-foundation:1.0.0-alpha12"
+androidx-tv-material3 = "androidx.tv:tv-material:1.1.0-alpha01"
+
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version = "2.9.6" }
+androidx-navigation3-runtime = { module = "androidx.navigation3:navigation3-runtime", version.ref = "navigation3" }
+androidx-navigation3-ui = { module = "androidx.navigation3:navigation3-ui", version.ref = "navigation3" }
+
+[bundles]
+common = [
+    "androidx-core-ktx",
+    "androidx-appcompat",
+    "androidx-activity-compose",
+    "androidx-compose-runtime",
+    "androidx-compose-material-iconsExtended",
+    "androidx-ui", "androidx-ui-graphics", "androidx-ui-test-junit4", "androidx-ui-tooling", "androidx-ui-test-manifest", "androidx-ui-tooling-preview",
+    "androidx-navigation-compose",
+    "androidx-compose-constraintlayout", "androidx-compose-animation-graphics"
+]
+phone = ["androidx-compose-material3", "androidx-compose-material3-adaptive"]
+tv = ["androidx-tv-foundation", "androidx-tv-material3"]
+navigation3 = ["androidx-navigation3-runtime", "androidx-navigation3-ui"]
