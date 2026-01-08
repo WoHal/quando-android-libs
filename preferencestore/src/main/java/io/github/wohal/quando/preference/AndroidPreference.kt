@@ -1,4 +1,4 @@
-package wang.soian.preferencestore
+package io.github.wohal.quando.preference
 
 import android.content.SharedPreferences
 import android.content.SharedPreferences.Editor

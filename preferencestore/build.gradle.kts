@@ -7,10 +7,10 @@ plugins {
     alias(libs.plugins.maven.publish)
 }
 
-val libVersion = "0.0.1"
+val libVersion = "0.0.2"
 
 android {
-    namespace = "wang.soian.preferencestore"
+    namespace = "io.github.wohal.quando.preference"
     compileSdk {
         version = release(36)
     }
@@ -68,7 +68,7 @@ afterEvaluate {
             name = "Android shared preferences"
             description = "The android shared preferences library."
             inceptionYear = "2025"
-            url = "https://github.com/WoHal/quando-android/"
+            url = "https://github.com/WoHal/quando-android-libs/"
             licenses {
                 license {
                     name = "MIT License"
@@ -84,9 +84,9 @@ afterEvaluate {
                 }
             }
             scm {
-                url = "https://github.com/WoHal/quando-android/"
-                connection = "scm:git:git://github.com/WoHal/quando-android.git"
-                developerConnection = "scm:git:ssh://git@github.com/WoHal/quando-android.git"
+                url = "https://github.com/WoHal/quando-android-libs/"
+                connection = "scm:git:git://github.com/WoHal/quando-android-libs.git"
+                developerConnection = "scm:git:ssh://git@github.com/WoHal/quando-android-libs.git"
             }
         }
     }

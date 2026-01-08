@@ -1,17 +1,17 @@
-package wang.soian.preferencestore
+package io.github.wohal.quando.preference
 
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.preference.PreferenceManager
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
-import wang.soian.preferencestore.AndroidPreference.BooleanPrimitive
-import wang.soian.preferencestore.AndroidPreference.FloatPrimitive
-import wang.soian.preferencestore.AndroidPreference.IntPrimitive
-import wang.soian.preferencestore.AndroidPreference.LongPrimitive
-import wang.soian.preferencestore.AndroidPreference.Object
-import wang.soian.preferencestore.AndroidPreference.StringPrimitive
-import wang.soian.preferencestore.AndroidPreference.StringSetPrimitive
+import io.github.wohal.quando.preference.AndroidPreference.BooleanPrimitive
+import io.github.wohal.quando.preference.AndroidPreference.FloatPrimitive
+import io.github.wohal.quando.preference.AndroidPreference.IntPrimitive
+import io.github.wohal.quando.preference.AndroidPreference.LongPrimitive
+import io.github.wohal.quando.preference.AndroidPreference.Object
+import io.github.wohal.quando.preference.AndroidPreference.StringPrimitive
+import io.github.wohal.quando.preference.AndroidPreference.StringSetPrimitive
 
 class AndroidPreferenceStore(
   context: Context,

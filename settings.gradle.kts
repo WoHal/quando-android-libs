@@ -35,5 +35,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "quando"
-include(":app")
 include(":preferencestore")
+include(":mpvplayer")
+include(":libmpv")

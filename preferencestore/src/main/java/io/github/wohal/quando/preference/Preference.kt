@@ -1,4 +1,4 @@
-package wang.soian.preferencestore
+package io.github.wohal.quando.preference
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
